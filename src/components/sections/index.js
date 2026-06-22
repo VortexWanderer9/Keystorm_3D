@@ -1,0 +1,9 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as FeaturedKeyboards } from "./FeaturedKeyboards";
+export { default as KeyboardBuilder } from "./KeyboardBuilder";
+export { default as FeaturesSection } from "./FeaturesSection";
+export { default as TestimonialsSection } from "./TestimonialsSection";
+export { default as GallerySection } from "./GallerySection";
+export { default as PricingSection } from "./PricingSection";
+export { default as NewsletterSection } from "./NewsletterSection";
+export { default as Footer } from "./Footer";
