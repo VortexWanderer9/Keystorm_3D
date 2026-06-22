@@ -6,12 +6,12 @@ export const products = [
     rating: 4.9,
     reviews: 234,
     image:
-      "https://images.unsplash.com/photo-1587829191301-6f356ac45c94?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1587829191301-6f356ac45c94?w=500&h=500&fit=crop&q=80",
     category: "mechanical",
     switches: "hot-swap",
     wireless: false,
     description:
-      "Premium mechanical keyboard with hot-swappable switches, aluminum frame, and RGB lighting.",
+      "Premium mechanical keyboard with hot-swappable switches, aluminum frame, and per-key RGB lighting.",
     specs: {
       switchType: "Hot-Swappable",
       material: "CNC Aluminum",
@@ -27,12 +27,12 @@ export const products = [
     rating: 4.8,
     reviews: 189,
     image:
-      "https://images.unsplash.com/photo-1595225476933-0efb8b5f5b8d?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1595225476933-0efb8b5f5b8d?w=500&h=500&fit=crop&q=80",
     category: "mechanical",
     switches: "gateron",
     wireless: true,
     description:
-      "Wireless mechanical keyboard with 80-hour battery life and 2.4GHz connection.",
+      "Wireless mechanical keyboard with 80-hour battery and 2.4GHz connection for lag-free gaming.",
     specs: {
       switchType: "Gateron Optical",
       material: "Aluminum Alloy",
@@ -48,16 +48,16 @@ export const products = [
     rating: 4.7,
     reviews: 156,
     image:
-      "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=500&h=500&fit=crop&q=80",
     category: "mechanical",
     switches: "cherry-mx",
     wireless: false,
     description:
-      "Compact 65% mechanical keyboard perfect for gaming and typing.",
+      "Compact 65% mechanical keyboard perfect for gaming, typing, and content creation.",
     specs: {
       switchType: "Cherry MX Switches",
-      material: "Steel & Plastic",
-      rgb: "RGB Backlighting",
+      material: "Steel & CNC Aluminum",
+      rgb: "Per-Key RGB Backlighting",
       connectivity: "USB-C",
       layout: "65%",
     },
@@ -69,15 +69,15 @@ export const products = [
     rating: 4.9,
     reviews: 267,
     image:
-      "https://images.unsplash.com/photo-1578506094306-246537150218?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1578506094306-246537150218?w=500&h=500&fit=crop&q=80",
     category: "mechanical",
     switches: "hot-swap",
     wireless: false,
     description:
-      "Premium 75% keyboard with customizable switches and stunning LED effects.",
+      "Professional 75% keyboard with hot-swap switches and stunning per-key RGB + underglow effects.",
     specs: {
       switchType: "Hot-Swappable",
-      material: "CNC Aluminum",
+      material: "Premium CNC Aluminum",
       rgb: "Per-Key RGB + Underglow",
       connectivity: "USB-C",
       layout: "75%",
@@ -90,17 +90,17 @@ export const products = [
     rating: 4.6,
     reviews: 142,
     image:
-      "https://images.unsplash.com/photo-1587829191301-6f356ac45c94?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1618164436241-4473940571db?w=500&h=500&fit=crop&q=80",
     category: "mechanical",
     switches: "kailh",
     wireless: true,
     description:
-      "Ultra-lightweight wireless keyboard for on-the-go gaming and work.",
+      "Ultra-lightweight wireless keyboard for on-the-go gaming and professional work.",
     specs: {
       switchType: "Kailh Box Switches",
-      material: "Carbon Fiber",
-      rgb: "Static RGB",
-      connectivity: "Bluetooth 5.0",
+      material: "Carbon Fiber + Aluminum",
+      rgb: "Addressable RGB",
+      connectivity: "Bluetooth 5.0 + 2.4GHz",
       layout: "60%",
     },
   },
@@ -111,18 +111,18 @@ export const products = [
     rating: 4.8,
     reviews: 198,
     image:
-      "https://images.unsplash.com/photo-1595225476933-0efb8b5f5b8d?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1594928944512-73c8d5c85e32?w=500&h=500&fit=crop&q=80",
     category: "mechanical",
     switches: "lubed",
     wireless: false,
     description:
-      "Specifically designed for content creators with macro keys and custom layouts.",
+      "Designed for content creators with programmable macro keys and custom RGB profiles.",
     specs: {
-      switchType: "Lubed Switches",
-      material: "Aluminum",
-      rgb: "Per-Key RGB",
+      switchType: "Lubed Gateron Switches",
+      material: "Premium Aluminum",
+      rgb: "Per-Key RGB Customization",
       connectivity: "USB-C",
-      layout: "Programmable",
+      layout: "Programmable Layout",
     },
   },
 ];
@@ -252,36 +252,36 @@ export const galleryImages = [
     id: 1,
     title: "Elite Pro RGB",
     image:
-      "https://images.unsplash.com/photo-1587829191301-6f356ac45c94?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1587829191301-6f356ac45c94?w=800&h=600&fit=crop&q=80",
   },
   {
     id: 2,
     title: "Wireless X Lifestyle",
     image:
-      "https://images.unsplash.com/photo-1595225476933-0efb8b5f5b8d?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1595225476933-0efb8b5f5b8d?w=800&h=600&fit=crop&q=80",
   },
   {
     id: 3,
     title: "Compact RGB Detail",
     image:
-      "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&h=600&fit=crop&q=80",
   },
   {
     id: 4,
     title: "Aurora Pro Gaming",
     image:
-      "https://images.unsplash.com/photo-1578506094306-246537150218?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1578506094306-246537150218?w=800&h=600&fit=crop&q=80",
   },
   {
     id: 5,
-    title: "Studio Setup",
+    title: "Professional Desk Setup",
     image:
-      "https://images.unsplash.com/photo-1527814050087-3793815479db?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1527814050087-3793815479db?w=800&h=600&fit=crop&q=80",
   },
   {
     id: 6,
-    title: "Ultimate Performance",
+    title: "Ultimate Gaming Performance",
     image:
-      "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop&q=80",
   },
 ];

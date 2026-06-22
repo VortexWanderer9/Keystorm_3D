@@ -8,11 +8,11 @@ export const InteractiveKeyboard = () => {
 
   useFrame(() => {
     if (groupRef.current) {
-      const rotationX = (mousePos.y / window.innerHeight - 0.5) * 0.4;
-      const rotationY = (mousePos.x / window.innerWidth - 0.5) * 0.6;
+      const rotationX = (mousePos.y / window.innerHeight - 0.5) * 0.3;
+      const rotationY = (mousePos.x / window.innerWidth - 0.5) * 0.4;
 
-      groupRef.current.rotation.x += (rotationX - groupRef.current.rotation.x) * 0.05;
-      groupRef.current.rotation.y += (rotationY - groupRef.current.rotation.y) * 0.05;
+      groupRef.current.rotation.x += (rotationX - groupRef.current.rotation.x) * 0.08;
+      groupRef.current.rotation.y += (rotationY - groupRef.current.rotation.y) * 0.08;
     }
   });
 
@@ -23,8 +23,8 @@ export const InteractiveKeyboard = () => {
         <boxGeometry args={[4, 0.3, 1.5]} />
         <meshStandardMaterial
           color="#141829"
-          metalness={0.8}
-          roughness={0.2}
+          metalness={0.9}
+          roughness={0.15}
         />
       </mesh>
 
@@ -35,10 +35,10 @@ export const InteractiveKeyboard = () => {
             <boxGeometry args={[0.35, 0.35, 0.35]} />
             <meshStandardMaterial
               color={`hsl(${i * 26}, 100%, 50%)`}
-              metalness={0.9}
-              roughness={0.1}
+              metalness={0.95}
+              roughness={0.08}
               emissive={`hsl(${i * 26}, 100%, 30%)`}
-              emissiveIntensity={0.5}
+              emissiveIntensity={0.4}
             />
           </mesh>
         </group>
@@ -77,7 +77,7 @@ export const InteractiveKeyboard = () => {
       ))}
 
       {/* Floating Particles */}
-      {[...Array(20)].map((_, i) => (
+      {[...Array(15)].map((_, i) => (
         <FloatingParticle key={i} index={i} />
       ))}
     </group>
@@ -91,20 +91,20 @@ const FloatingParticle = ({ index }) => {
 
   useFrame((state) => {
     if (particleRef.current) {
-      particleRef.current.position.y = startY + Math.sin(state.clock.elapsedTime + index) * 0.5;
-      particleRef.current.position.x = startX + Math.cos(state.clock.elapsedTime + index) * 0.3;
-      particleRef.current.rotation.x += 0.01;
-      particleRef.current.rotation.y += 0.01;
+      particleRef.current.position.y = startY + Math.sin(state.clock.elapsedTime + index) * 0.3;
+      particleRef.current.position.x = startX + Math.cos(state.clock.elapsedTime + index) * 0.2;
+      particleRef.current.rotation.x += 0.008;
+      particleRef.current.rotation.y += 0.012;
     }
   });
 
   return (
     <mesh ref={particleRef} position={[startX, startY, 0.5]}>
-      <sphereGeometry args={[0.05, 16, 16]} />
+      <sphereGeometry args={[0.04, 12, 12]} />
       <meshStandardMaterial
         color={['#00ffff', '#ff00ff', '#00ff00'][index % 3]}
         emissive={['#00ffff', '#ff00ff', '#00ff00'][index % 3]}
-        emissiveIntensity={0.8}
+        emissiveIntensity={0.9}
       />
     </mesh>
   );
